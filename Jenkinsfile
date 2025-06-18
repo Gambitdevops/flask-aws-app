@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID = '977098985978'
         AWS_REGION = 'us-east-1'
-        ECR_REPO_NAME = 'gambit-damiano'
+        ECR_REPO_NAME = 'flask-aws-app'
         IMAGE_TAG = 'latest'
         DOCKER_IMAGE = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}:${IMAGE_TAG}"
         APP_DIR = 'flask-aws-app'
